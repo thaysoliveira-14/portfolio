@@ -11,8 +11,14 @@ export const SidebarContainer = styled.div`
 `
 export const SidebarLink = styled.a`
     text-decoration: none;
-    color: ${(props) => props.theme.text};
+    color: ${(props) => props.theme.colors.text};
     padding-bottom: 8px;
+    transition: 0.3s;
+
+    &:hover {
+        color: ${(props) => props.theme.colors.primary};
+        transform: scale(1.1);
+    }
 `
 
 
